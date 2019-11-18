@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="bin/main" path="src/main/java">
+		<attributes>
+			<attribute name="gradle_scope" value="main"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="bin/main" path="src/main/resources">
+		<attributes>
+			<attribute name="gradle_scope" value="main"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="bin/test" path="src/test/java">
+		<attributes>
+			<attribute name="gradle_scope" value="test"/>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="bin/test" path="src/test/resources">
+		<attributes>
+			<attribute name="gradle_scope" value="test"/>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
+	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer"/>
+	<classpathentry kind="lib" path="C:/Users/giovanni.gomez/.gradle/caches/modules-2/files-2.1/io.cucumber/cucumber-core/2.3.1/892e5619d45f3b8b49c388e09587c52ef9a6ea36/cucumber-core-2.3.1.jar" sourcepath="C:/Users/giovanni.gomez/.gradle/caches/modules-2/files-2.1/io.cucumber/cucumber-core/2.3.1/3c335ea3d8f18c0e0daeeef07ca2225b87b5f0c9/cucumber-core-2.3.1-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/giovanni.gomez/.gradle/caches/modules-2/files-2.1/net.serenity-bdd/serenity-cucumber/1.9.5/36b69f7ab95d37b641560840cb71528426600f16/serenity-cucumber-1.9.5.jar" sourcepath="C:/Users/giovanni.gomez/.gradle/caches/modules-2/files-2.1/net.serenity-bdd/serenity-cucumber/1.9.5/178d5e709d2cc4ca00d4c38250f76b1d8594a509/serenity-cucumber-1.9.5-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="C:/Users/giovanni.gomez/.gradle/caches/modules-2/files-2.1/io.cucumber/cucumber-junit/2.3.1/d0f81e6b53a8997d89ca5d8f40a56e7a273b83b3/cucumber-junit-2.3.1.jar" sourcepath="C:/Users/giovanni.gomez/.gradle/caches/modules-2/files-2.1/io.cucumber/cucumber-junit/2.3.1/f41c1904a69967e1762c69c4e9bbd732e081dedc/cucumber-junit-2.3.1-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/giovanni.gomez/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-api/3.11.0/79a8a85e1f7c79968748a89d44cd1332098aca7b/selenium-api-3.11.0.jar" sourcepath="C:/Users/giovanni.gomez/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-api/3.11.0/1dda1bc33f055dfdde435baaed51e49fe344eee1/selenium-api-3.11.0-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/giovanni.gomez/.gradle/caches/modules-2/files-2.1/io.cucumber/cucumber-java/2.3.1/ff074176a8a974e94769a2b6debcfc7e85c1ed40/cucumber-java-2.3.1.jar" sourcepath="C:/Users/giovanni.gomez/.gradle/caches/modules-2/files-2.1/io.cucumber/cucumber-java/2.3.1/bd63e19ade2de7ab9848dc40a6ab0008531704bf/cucumber-java-2.3.1-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/giovanni.gomez/.gradle/caches/modules-2/files-2.1/net.serenity-bdd/serenity-screenplay/1.9.9/9233d0af763ec0eda951d9e6d53a97ff55a35531/serenity-screenplay-1.9.9.jar" sourcepath="C:/Users/giovanni.gomez/.gradle/caches/modules-2/files-2.1/net.serenity-bdd/serenity-screenplay/1.9.9/a8f795a33a68df4ce861d3c65d780af6d4284020/serenity-screenplay-1.9.9-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/giovanni.gomez/.gradle/caches/modules-2/files-2.1/net.serenity-bdd/serenity-screenplay-webdriver/1.9.9/aa12e3003823d7336b86e3ecd9cc49b53acb8dbc/serenity-screenplay-webdriver-1.9.9.jar" sourcepath="C:/Users/giovanni.gomez/.gradle/caches/modules-2/files-2.1/net.serenity-bdd/serenity-screenplay-webdriver/1.9.9/71216e156de9d520162c6a25f35e24d9b7448020/serenity-screenplay-webdriver-1.9.9-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/giovanni.gomez/.gradle/caches/modules-2/files-2.1/net.serenity-bdd/serenity-core/1.9.9/9f92b8832d066c42650459bf9f6026686d336942/serenity-core-1.9.9.jar" sourcepath="C:/Users/giovanni.gomez/.gradle/caches/modules-2/files-2.1/net.serenity-bdd/serenity-core/1.9.9/a477ad604c0699debe8461a1466664c1a5de81ae/serenity-core-1.9.9-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin/default"/>
+</classpath>
