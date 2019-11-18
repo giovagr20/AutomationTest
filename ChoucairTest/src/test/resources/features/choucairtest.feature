@@ -4,7 +4,7 @@ Feature: URL Choucair
   I want to find out a job
 
 
-  Scenario: Title of your scenario
+  Scenario: Must go to search jobs
     Given User is in URL choucair
     When User choose option empleo
     And User find out empleos disponibles
