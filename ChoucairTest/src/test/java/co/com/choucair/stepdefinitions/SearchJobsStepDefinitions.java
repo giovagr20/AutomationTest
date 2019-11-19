@@ -18,33 +18,46 @@ import net.thucydides.core.annotations.Managed;
 
 public class SearchJobsStepDefinitions {
 
-	@Managed(driver = "IExplorer")
+	@Managed(driver = "chrome")
 	private WebDriver hisBrowser;
 	private Actor transactionalUser = Actor.named("transactionalUser");
-	private FinacleLoginHome finacleLoginHome;
+	private NavigateChoucairURL navigateChoucairURL;
 
 	@Before
 	public void setUp() {
 		transactionalUser.can(BrowseTheWeb.with(hisBrowser));
 	}
 
-	@Given("^User is main page of finacle$")
-	public void userIsMainPageOfFinacle() throws Exception {
-		transactionalUser.attemptsTo(Open.browserOn(finacleLoginHome));
+	@Given("^User is in URL choucair$")
+	public void userIsInURLChoucair() throws Exception {
+		transactionalUser.attemptsTo(Open.browserOn(navigateChoucairURL));
 		hisBrowser.switchTo().defaultContent();
-		hisBrowser.switchTo().frame("loginFrame");
+		
 	}
 
-	@When("^User submits user and password$")
-	public void userSubmitsUserAndPassword() throws Exception {
-		transactionalUser.attemptsTo(Enter.theValue("apoojary").into(finacleLoginHome.TXT_USER),
-				Enter.theValue("T7l(JwQ$EDm7G4").into(finacleLoginHome.TXT_PASSWORD),
-				Click.on(finacleLoginHome.BTN_SUBMIT));
+	@When("^User choose option empleo$")
+	public void userChooseOptionEmpleo() throws Exception {
+		transactionalUser.attemptsTo(Click.on("btn-menu")
+			,Click.on("menu-item-550"));
 	}
 
-	@Then("^User logged into finacle$")
-	public void userLoggedIntoFinacle() throws Exception {
-		System.out.println("Finalizó OK");
+	@When("^User find out empleos disponibles$")
+	public void userFindOutEmpleosDisponibles() throws Exception {
+				Click.on(navigateChoucairURL.BTN_SUBMIT));
+	}
+
+	
+	@Then("^User put word Developer and Medellin$")
+	public void userPutWordDeveloperAndMedellin() throws Exception {
+		transactionalUser.attemptsTo(Enter.theValue("Developer").into(navigateChoucairURL.TXT_DEV),
+					     Enter.theValue("Developer").into(navigateChoucairURL.TXT_CIT));
+					     
+	}
+	
+	@Then("^User submit Buscar Trabajos$")
+	public void userSubmitBuscarTrabajos() throws Exception {
+              transactionalUser.attempsTo(
+		      Click.on(navigateChoucairURL.BTN_SUBMIT));
 	}
 	
 }
