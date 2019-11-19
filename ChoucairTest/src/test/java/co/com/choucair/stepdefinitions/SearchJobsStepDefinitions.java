@@ -2,7 +2,7 @@ package co.com.choucair.stepdefinitions;
 
 import org.openqa.selenium.WebDriver;
 
-import co.com.bancolombia.certification.finacle.userinterface.FinacleLoginHome;
+import co.com.choucair.NavigateChoucairURL;
 //import co.com.bancolombia.certification.finacle.userinterface.FinacleLoginHome; //Sinde interface
 import cucumber.api.PendingException;
 import cucumber.api.java.Before;
