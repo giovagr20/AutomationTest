@@ -19,27 +19,44 @@ public class SearchJobsStepDefinitions {
 
 	@Managed(driver = "chrome")
 	private WebDriver hisBrowser;
-	private Actor userChoucair = Actor.named("userChoucair");
+	private Actor transactionalUser = Actor.named("transactionalUser");
 	private SearchJobChoucairURL searchJobChoucairURL;
 
 	@Before
 	public void setUp() {
-		userChoucair.can(BrowseTheWeb.with(hisBrowser));
+		transactionalUser.can(BrowseTheWeb.with(hisBrowser));
 	}
 
 	@Given("^User is in URL choucair$")
 	public void userIsInURLChoucair() throws Exception {
-	userChoucair.attemptsTo(Open.browserOn(searchJobChoucairURL));	
+		transactionalUser.attemptsTo(Open.browserOn(searchJobChoucairURL));	
 	hisBrowser.switchTo().defaultContent();
 	}
 	
-	
-	//@Given("^User is main page of finacle$")
-	//public void userIsMainPageOfFinacle() throws Exception {
-		//userChoucair.attemptsTo(Open.browserOn(searchJobChoucairURL));
-		//hisBrowser.switchTo().defaultContent();
-		//hisBrowser.switchTo().frame("loginFrame");
-	//}
 
+	@When("^User choose option empleo$")
+	public void userChooseOptionEmpleo() throws Exception {
+		transactionalUser.attemptsTo(Click.on("btn-menu")
+			,Click.on("menu-item-550"));
+	}
+
+	@When("^User find out empleos disponibles$")
+	public void userFindOutEmpleosDisponibles() throws Exception {
+				Click.on("elementor-wrap");
+	}
+
+	
+	@Then("^User put word Developer and Medellin$")
+	public void userPutWordDeveloperAndMedellin() throws Exception {
+		transactionalUser.attemptsTo(Enter.theValue("Developer").into(searchJobChoucairURL.TXT_DEV),
+					     Enter.theValue("Developer").into(searchJobChoucairURL.TXT_CIT));
+					     
+	}
+	
+	@Then("^User submit Buscar Trabajos$")
+	public void userSubmitBuscarTrabajos() throws Exception {
+              transactionalUser.attempsTo(
+		      Click.on((searchJobChoucairURL.BTN_SUBMIT)));
+	}
 	
 }
